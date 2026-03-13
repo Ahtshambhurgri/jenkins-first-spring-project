@@ -75,6 +75,7 @@ public class HandlerClass {
 	}
 	@RequestMapping(path="/process" ,method=RequestMethod.POST)
 	public String display(@ModelAttribute User user,Model model) {
+		System.out.println("this Is Process Controller");		
 		this.userService.createUserDao(user);
 		return "displayDetails";
 	}
@@ -97,6 +98,7 @@ public class HandlerClass {
 		try {
 			byte[] arr = file.getBytes();
 			String path = System.getProperty("user.home");
+			System.out.println(path);
 			Path pat = Paths.get(path);
 			
 		}catch(IOException e) {
