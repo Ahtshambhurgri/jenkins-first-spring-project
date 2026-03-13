@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.check{
+	background-color:red;
+	color:blue;
+}
+#check{
+	background-color:yellow;
+}
+
